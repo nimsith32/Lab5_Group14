@@ -6,7 +6,6 @@
  * @version 1.0
  * @since December 19, 2021
  * @file Main.java
- *
  */
 
 package ca.durhamcollege.oop3200f2021javalab5;
