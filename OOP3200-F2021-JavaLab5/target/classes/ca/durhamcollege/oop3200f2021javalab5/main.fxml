@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="332.0" prefWidth="494.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.durhamcollege.oop3200f2021javalab5.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.80003662109374" minWidth="10.0" prefWidth="156.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.59999999999997" minWidth="10.0" prefWidth="297.6" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="48.400020599365234" minHeight="0.0" prefHeight="48.400020599365234" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.79998779296876" minHeight="10.0" prefHeight="63.40001220703125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="186.79999389648435" minHeight="10.0" prefHeight="73.99998779296875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="186.79999389648435" minHeight="10.0" prefHeight="65.79999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="186.79999389648435" minHeight="10.0" prefHeight="53.00000610351563" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label fx:id="myHeight" alignment="TOP_LEFT" text="My Height">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label fx:id="myWeight" text="My Weight" GridPane.rowIndex="1">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Button fx:id="calculateButton" onAction="#OnCalculateButtonClick" text="Calculate BMI" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Button>
+            <TextField fx:id="myHeightTextField" alignment="CENTER_RIGHT" promptText="m" GridPane.columnIndex="1" />
+            <TextField fx:id="myWeightTextField" alignment="CENTER_RIGHT" promptText="Kg" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="resultTextFieldOne" prefHeight="26.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="resultTextFieldTwo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        </children>
+    </GridPane>
+</VBox>
